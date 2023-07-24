@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>ToDos</title>
+</head>
+<body>
+        <div class="container">
+            <div class="main">
+                <h1 class="app-title">Todoes</h1>
+                <div class="form-input">
+
+                    <form action="" class="js-form">
+                        <input autofocus type="text" name="" id="" class="js-todo-input todo-input" placeholder="Things to do">
+                        <button class="js-btnSubmit" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q1.625 0 3.075.475T17.75 3.8L16.3 5.275q-.95-.6-2.025-.938T12 4Q8.675 4 6.337 6.337T4 12q0 3.325 2.337 5.663T12 20q.8 0 1.55-.15t1.45-.425l1.5 1.525q-1.025.5-2.15.775T12 22Zm7-2v-3h-3v-2h3v-3h2v3h3v2h-3v3h-2Zm-8.4-3.4l-4.25-4.25l1.4-1.4l2.85 2.85l10-10.025l1.4 1.4L10.6 16.6Z"/></svg></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="todo-list-category">
+                <div class="todo-list-category__item ">
+                    <img src="storage/images/View All.png" alt="">
+                    <span>All Tasks</span>
+                    <div class="js-todo-list-category__item-countAll">
+                    </div>
+                </div>
+                <div class="todo-list-category__item ">
+                    <img src="storage/images/Pending actions.png" alt="">
+                    <span>Todo</span>
+                    <div class="js-todo-list-category__item-countUnchecked">
+                    </div>
+                </div>
+                <div class="todo-list-category__item">
+                    <img src="storage/images/Task Completed.png" alt="">
+                    <span>Done</span>
+                    <div class="js-todo-list-category__item-countChecked">
+                    </div>
+                </div>
+            </div>
+                <ul id="js-todo-list" class="js-todo-list todo-list">
+                </ul>
+            </div>
+        </div>
+
+<script src="assets/css/main.js"></script>
+</body>
+</html>
