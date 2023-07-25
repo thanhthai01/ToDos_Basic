@@ -15,7 +15,7 @@ function renderTodoList() {
     // Cập nhật số lượng công việc
     countTodoItem();
 
-    // Hiển thị danh sách công việc
+    // Hiển thị thông báo khi danh sách công việc rỗng
     if (todoList.length === 0) {
         list.innerHTML = `<div class="empty-state">
         <h2 class="empty-state__title">Add your first todo</h2>
@@ -23,6 +23,8 @@ function renderTodoList() {
     </div>`;
         return;
     }
+
+    // Hiển thị danh sách công việc thei danh mục
     if(category__item == 0){
             list.innerHTML = todoList.map(todo => `
     <li class="todo-item ${todo.checked ? "done" : ""}" data-key="${todo.id}">
